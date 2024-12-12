@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">  
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>    
+        <title>Prpr DCL "Front-End Web Development" Challenge #1</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <header id="nav-header" class="nav-bar-wrapper">
+            <nav class="nav-bar">
+                <figure class="nav-logo-wrapper">
+                    <a><img id="nav-logo" alt="preprlabs logo nav-bar" src="images/logoPrepr.png"></a>
+                </figure>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <ul id="nav-ul" class="nav-bar nav-bar-menu">
+                    <span class="menu-options">
+                        <li id="explore" class="nav-bar-menu-link" name="nav-link"><a href="index.html">Explore</a></li>
+                        <li id="dashboard" class="nav-bar-menu-link" name="nav-link"><a>Dashboard</a></li>
+                        <li id="challenges" class="nav-bar-menu-link" name="nav-link"><a href="challenges.html">My Challenges</a></li>
+                        <li id="labs" class="nav-bar-menu-link" name="nav-link"><a href="labs.html">My Labs</a></li>
+                        <li id="projects" class="nav-bar-menu-link" name="nav-link"><a href="projects.html">My Projects</a></li>
+                        <li id="career-explorer" class="nav-bar-menu-link" name="nav-link"><a>Career Explorer</a></li>
+                    </span>
+                    
+                    <div class="blank-div">
+
+                    </div>
+
+                    <div class="nav-icons">
+                        <span id="bell" class="nav-bar-menu" name="nav-link"><a><i class="icon-bell"></i></a></span>
+                        <span id="chat" class="nav-bar-menu" name="nav-link"><a><i  class="icon-chat"></i></a></span>
+                        <span id="question-mark" class="nav-bar-menu" name="nav-link"><a><i class="icon-question-mark"></i></a></span>
+                    </div>
+
+                    <div class="nav-search-bar">   
+                        <li id="search-bar" class="nav-bar-menu" name="nav-link"><input type="text" placeholder="Search"/></li>
+                    </div>
+
+                    <div class="nav-icons big-nav-icons">                        
+                        <span id="profile" class="nav-bar-menu" name="nav-link"><a><i class="icon-profile"></i></a></span>
+                        <span id="app-menu" class="nav-bar-menu" name="nav-link"><a><i class="icon-app-menu"></i></a></span>
+                    </div>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="featured-labs" class="featured-slides-swiper"> <!--Would <section> be a better element to use?-->
+                <div id="labs-swipper-wrapper" class="featured-slides-swiper">
+                    <h2>Featured By Prepr</h2>
+                    <!-- Slider main container -->
+                    <div class="swiper featured-swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide featured-slide">
+                                <div class="slide-wrapper">
+                                    <div style="padding:0 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/947483656?h=229ec7ac2a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:static;top:0;left:0;width:100%;height:100%;" title="Lab_ChatGPT for HR Teams"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                    <h3 class="slide-title">Human Resources</h3>
+                                    <p class="slide-text slide-content">This comprehensive lab serves as a practical training ground for HR professionals, aiming to hone their expe...</p>
+                                    <button>View Lab</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide featured-slide">
+                                <div class="slide-wrapper">
+                                    <div style="padding:0 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/947483692?h=63bee3484e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:static;top:0;left:0;width:100%;height:100%;" title="Lab_ChatGPT for Sales Teams"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                    <h3>ChatGPT for Sales Teams</h3>
+                                    <button>View Lab</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide featured-slide">
+                                <div class="slide-wrapper">
+                                    <div style="padding:0 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/947483656?h=229ec7ac2a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:static;top:0;left:0;width:100%;height:100%;" title="Lab_ChatGPT for HR Teams"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                    <h3>ChatGPT for HR Teams</h3><p>This lab introduces HR teams to practical applications of ChatGPT in various human resources functions.</p>
+                                    <button>View Lab</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide featured-slide">
+                                <div class="slide-wrapper">
+                                    <div style="padding:0 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/947483837?h=6f43f593ca&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:static;top:0;left:0;width:100%;height:100%;" title="Lab_Self Care"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                    <h3>Self Care</h3>
+                                    <button>View Lab</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide featured-slide">
+                                <div class="slide-wrapper">
+                                    <div style="padding:0 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/947483797?h=40e85874ae&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:static;top:0;left:0;width:100%;height:100%;" title="Lab_ScrumMaster Prep"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                    <h3>Scrum Master Prep</h3><p>The ScrumMaster Prep lab offers a comprehensive exploration of Scrum practices, catering to individuals aiming to excel in agile project management...</p>
+                                    <button>View Lab</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide featured-slide">
+                                <div class="slide-wrapper">
+                                    <div style="padding:0 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/947520784?h=59863c022e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:static;top:0;left:0;width:100%;height:100%;" title="Lab_Meta Leadership"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                    <h3>Meta Leadership</h3>
+                                    <button>View Lab</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide featured-slide">
+                                <div class="slide-wrapper">
+                                    <div style="padding:0 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/947526221?h=f967978775&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:static;top:0;left:0;width:100%;height:100%;" title="Lab_Virtual Sales Leader"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                    <h3>Virtual Sales Leader 2024</h3>
+                                    <button>View Lab</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide featured-slide">
+                                <div class="slide-wrapper">
+                                    <div style="padding:0 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/947530817?h=cf5d5c3db9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:static;top:0;left:0;width:100%;height:100%;" title="Lab_Company Culture"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                    <h3>Company Culture</h3>
+                                    <button>View Lab</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide featured-slide">
+                                <div class="slide-wrapper">
+                                    <img src="/images/dcl.jpg" width="100%"/>
+                                    <h3>Digital Capability Labs</h3><p>As the working world goes digital, developing a well-rounded mix of soft skills and digital knowledg...</p>
+                                    <button>View Lab Program</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide featured-slide">
+                                <div class="slide-wrapper">
+                                    <img src="/images/youth-boost.jpg" width="100%"/>
+                                    <h3>Youth Boost Career Labs</h3><p>Powered by Magnet and funded through the Government of Canada, Youth Boost connects students and rec...</p>
+                                    <button>View Lab Program</button>
+                                </div>
+                            </div>
+                        </div>                      
+                    </div>
+                    <div class="featured-pagination"></div>
+
+                </div>
+            </section>
+            <section id="newcomer-tips">
+                <h2>New to PreprLabs? Here are some tips.</h2>
+                <p class="section-description">Welcome to PreprLabs! If you're new to our platform, this section is your go-to guide for getting started. Discover essential tips and tricks to navigate PreprLabs seamlessly. From account setup to maximizing the features, we've curated a quick reference to ensure you make the most of your experience. Dive into the world of PreprLabs with confidence, armed with the insights you need to succeed!</p>
+                <div id="columns-container">
+                   
+                    <div id="achievements-column" class="newcomer-card">
+                        <img src="/images/achievement.png">
+                        <h3>Get New Achievements</h3>
+                        <p>Ready to showcase your skills and earn achievements? Join our Challenges and Labs to not only level up your expertise but also unlock exclusive achievements along the way!</p>
+                        <div class="card-button-wrapper">
+                            <button class="card-button">View Achievements</button>
+                        </div>
+                    </div>
+                    <div id="leaderboard-column" class="newcomer-card">
+                        <img src="/images/leaderboard.png">
+                        <h3>Browse Leaderboard</h3>
+                        <p>Ready to showcase your skills and earn achievements? Join our Challenges and Labs to not only level up your expertise but also unlock exclusive achievements along the way!</p>
+                        <span class="card-button-wrapper"><button class="card-button">Browse Leaderboard </button></span>
+                    </div>                    
+                    <div id="dashboard-column" class="newcomer-card">
+                        <img src="/images/chart.png">
+                        <h3>Review Your Dashboard</h3>
+                        <p>Ready to showcase your skills and earn achievements? Join our Challenges and Labs to not only level up your expertise but also unlock exclusive achievements along the way!</p>
+                        <span class="card-button-wrapper"> <button class="card-button">Review Dashboard </button></span>
+                    </div>                    
+                    <div id="knowledge-column" class="newcomer-card">
+                        <img src="/images/question.png">
+                        <h3>Explore Our Knowledge Base</h3>
+                        <p>Ready to showcase your skills and earn achievements? Join our Challenges and Labs to not only level up your expertise but also unlock exclusive achievements along the way!</p>
+                        <span class="card-button-wrapper"><button class="card-button">Explore Help Center </button></span>
+                    </div>
+ 
+                </div>
+            </section>
+            
+            <section id="placeholder-recommended" class="recommended-slides-swiper">
+                <div id="recommended-swipper-wrapper" class="recommended-slides-swiper">
+                    <h2>Recommended For You</h2>
+                    <p class="section-description">Dive into Labs and Challenges meticulously chosen based on the skills and jobs you've added to your profile. Your journey just got personal, as we curate opportunities that align perfectly with your aspirations. Seize the chance to elevate your skills and thrive in areas that matter most to you.</p>
+ 
+                    <!-- Slider main container -->
+                    <div class="swiper recommended-swiper">
+                        <!-- Additional required wrapper -->                    
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide recommendation-card">
+                                <img src="/recommended-pics/Ecommerce.jpg" alt="Youth Boost - Ecommerce">
+                                <div class="card-content">
+                                    <h3>Youth Boost - Ecommerce</h3>
+                                    <div class="organization-info">
+                                        <span>Organization: <strong>Youth Boost</strong></span>
+                                        <span>Privacy: <strong>Public</strong></span>
+                                    </div>
+                                    <div class="stats-container">
+                                        <div class="skill-stats">
+                                            <span><i class="icon-challenge"></i>7 Challenges</span>
+                                            <span><i class="icon-resources"></i>35 Resources</span>
+                                            <span><i class="icon-clock"></i>1 - 2 Days</span>
+                                            <span><i class="icon-level"></i>Beginner</span>
+                                        </div>
+                                    </div>
+                                    <div class="tags">
+                                        <span class="tag">Communication</span>
+                                        <span class="tag">Problem Solving</span>
+                                        <span class="tag">Branding</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- More slides here -->
+                            <div class="swiper-slide recommendation-card">
+                                <img src="/recommended-pics/Presenting-Project.jpg" alt="Youth Boost - Project Presentation">
+                                <div class="card-content">
+                                    <h3>Youth Boost - Project Presentation</h3>
+                                    <div class="organization-info">
+                                        <span>Organization: <strong>Youth Boost</strong></span>
+                                        <span>Privacy: <strong>Public</strong></span>
+                                    </div>
+                                    <div class="stats-container">
+                                        <div class="skill-stats">
+                                            <span><i class="icon-challenge"></i>Open until 03/31/2025</span>
+                                            <span><i class="icon-calendar"></i>2 - 4 Hours</span>
+                                            <span><i class="icon-level"></i>Beginner</span>
+                                        </div>
+                                    </div>
+                                    <div class="tags">
+                                        <span class="tag">Communication</span>
+                                        <span class="tag">Problem Solving</span>
+                                        <span class="tag">Presenting Solutions</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide recommendation-card">
+                                <img src="/recommended-pics/User-Flow.jpg" alt="Youth Boost - QA Analyst: User Flow">
+                                <div class="card-content">
+                                    <h3>Youth Boost - QA Analyst: User Flow</h3>
+                                    <div class="organization-info">
+                                        <span>Organization: <strong>Youth Boost</strong></span>
+                                        <span>Privacy: <strong>Public</strong></span>
+                                    </div>
+                                    <div class="stats-container">
+                                        <div class="skill-stats">
+                                            <span><i class="icon-challenge"></i>Open until 03/31/2025</span>
+                                            <span><i class="icon-calendar"></i>4 - 8 Hours</span>
+                                            <span><i class="icon-level"></i>Beginner</span>
+                                        </div>
+                                    </div>
+                                    <div class="tags">
+                                        <span class="tag">Python</span>
+                                        <span class="tag">Selenium</span>
+                                        <span class="tag">Testing</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide recommendation-card">
+                                <img src="/recommended-pics/UX-Designer.png" alt="UX Designer">
+                                <div class="card-content">
+                                    <h3>UX Designer</h3>
+                                    <div class="organization-info">
+                                        <span>Organization: <strong>Prepr</strong></span>
+                                        <span>Privacy: <strong>Public</strong></span>
+                                    </div>
+                                    <div class="stats-container">
+                                        <div class="skill-stats">
+                                            <span><i class="icon-challenge"></i>4 Challenges</span>
+                                            <span><i class="icon-resources"></i>26 Resources</span>
+                                            <span><i class="icon-clock"></i>1 - 2 Days</span>
+                                            <span><i class="icon-level"></i>Beginner</span>
+                                        </div>
+                                    </div>
+                                    <div class="tags">
+                                        <span class="tag">Problem Solving</span>
+                                        <span class="tag">Creative Thinking</span>
+                                        <span class="tag">Design Thinking</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide recommendation-card">
+                                <img src="/recommended-pics/QA-Analyst.png" alt="Technical QA Analyst Career Lab">
+                                <div class="card-content">
+                                    <h3>Technical QA Analyst</h3>
+                                    <div class="organization-info">
+                                        <span>Organization: <strong>Prepr</strong></span>
+                                        <span>Privacy: <strong>Public</strong></span>
+                                    </div>
+                                    
+                                    <div class="stats-container">
+                                        <div class="skill-stats">
+                                            <span><i class="icon-challenge"></i>4 Challenges</span>
+                                            <span><i class="icon-resources"></i>15 Resources</span>
+                                            <span><i class="icon-clock"></i>1 - 2 Days</span>
+                                            <span><i class="icon-level"></i>Beginner</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="tags">
+                                        <span class="tag">JavaScript</span>
+                                        <span class="tag">Python</span>
+                                        <span class="tag">Selenium</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide recommendation-card">
+                                <img src="/recommended-pics/Success-Skills.png" alt="Skills for Success Overview">
+                                <div class="card-content">
+                                    <h3>Skills for Success Overview</h3>
+                                    <div class="organization-info">
+                                        <span>Organization: <strong>Prepr</strong></span>
+                                        <span>Privacy: <strong>Private</strong></span>
+                                    </div>
+                                    <div class="stats-container">
+                                        <div class="skill-stats">
+                                            <span><i class="icon-challenge"></i>2 Challenges</span>
+                                            <span><i class="icon-resources"></i>11 Resources</span>
+                                            <span><i class="icon-clock"></i>N/A</span>
+                                            <span><i class="icon-level"></i>N/A</span>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="tags">
+                                        <span class="tag">Communication</span>
+                                        <span class="tag">Problem Solving</span>
+                                        <span class="tag">Creativity</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide recommendation-card">
+                                <img src="/recommended-pics/Project-Manager.png" alt="Youth Boost - Ecommerce">
+                                <div class="card-content">
+                                    <h3>Example Company Project</h3>
+                                    <div class="organization-info">
+                                        <span>Organization: <strong>N/A</strong></span>
+                                        <span>Privacy: <strong>Public</strong></span>
+                                    </div>
+                                    <div class="stats-container">
+                                        <div class="skill-stats">
+                                            <span><i class="icon-challenge"></i>4 Challenges</span>
+                                            <span><i class="icon-resources"></i>25 Resources</span>
+                                            <span><i class="icon-clock"></i>1 - 2 Days</span>
+                                            <span><i class="icon-level"></i>Beginner</span>
+                                        </div>
+                                    </div>
+                                    <div class="tags">
+                                        <span class="tag">Communication</span>
+                                        <span class="tag">Problem Solving</span>
+                                        <span class="tag">Leadership</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide recommendation-card">
+                                <img src="/recommended-pics/API.jpg" alt="Youth Boost - Ecommerce">
+                                <div class="card-content">
+                                    <h3>APIs</h3>
+                                    <div class="organization-info">
+                                        <span>Organization: <strong>Prepr</strong></span>
+                                        <span>Privacy: <strong>Private</strong></span>
+                                    </div>
+                                    <div class="stats-container">
+                                        <div class="skill-stats">
+                                            <span><i class="icon-challenge"></i>0 Challenges</span>
+                                            <span><i class="icon-resources"></i>2 Resources</span>
+                                            <span><i class="icon-clock"></i>N/A</span>
+                                            <span><i class="icon-level"></i>N/A</span>
+                                        </div>
+                                    </div>
+                                    <div class="tags">
+                                        <span class="tag">Problem Solving</span>
+                                        <span class="tag">Skill</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="recommended-pagination"></div>
+                    </div>
+
+                    <div class="recommended-prev"></div>
+                    <div class="recommended-next"></div>
+                </div>
+            </section>
+
+            <section id="interested-skills" class="skills-slides-swiper">
+                <h2>Skills You May Be Interested</h2>
+                <p class="section-description">These recommendations are fine-tuned based on the skills and jobs you've added to your profile. The more you enrich your profile with additional skills and jobs, the more accurate and relevant the results become. Supercharge your experience by expanding your profile, and let us guide you towards opportunities aligned with your aspirations.</p>
+                
+                <div class="swiper skills-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide skill-slide">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="/icons/Skills.png" alt="Project Scope">
+                                </div>
+                                <h3>Project Scope Management</h3>
+                                <div class="skill-stats">
+                                    <span><i class="icon-challenge"></i>1 Challenges</span>
+                                    <span><i class="icon-lab"></i>0 Labs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide skill-slide">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="/icons/Skills.png" alt="Referral">
+                                </div>
+                                <h3>Referral Request Scripting</h3>
+                                <div class="skill-stats">
+                                    <span><i class="icon-challenge"></i>0 Challenges</span>
+                                    <span><i class="icon-lab"></i>1 Labs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide skill-slide">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="/icons/Skills.png" alt="Product Tours">
+                                </div>
+                                <h3>Product Tours</h3>
+                                <div class="skill-stats">
+                                    <span><i class="icon-challenge"></i>0 Challenges</span>
+                                    <span><i class="icon-lab"></i>1 Labs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide skill-slide">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="/icons/Skills.png" alt="Typography">
+                                </div>
+                                <h3>Typography</h3>
+                                <div class="skill-stats">
+                                    <span><i class="icon-challenge"></i>7 Challenges</span>
+                                    <span><i class="icon-lab"></i>3 Labs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide skill-slide">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="/icons/Skills.png" alt="Typography">
+                                </div>
+                                <h3>Writing For The Web</h3>
+                                <div class="skill-stats">
+                                    <span><i class="icon-challenge"></i>7 Challenges</span>
+                                    <span><i class="icon-lab"></i>3 Labs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide skill-slide">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="/icons/Skills.png" alt="Typography">
+                                </div>
+                                <h3>CAPM Exam Preparation</h3>
+                                <div class="skill-stats">
+                                    <span><i class="icon-challenge"></i>7 Challenges</span>
+                                    <span><i class="icon-lab"></i>3 Labs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide skill-slide">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="/icons/Skills.png" alt="Typography">
+                                </div>
+                                <h3>Certification Exam Preparation</h3>
+                                <div class="skill-stats">
+                                    <span><i class="icon-challenge"></i>7 Challenges</span>
+                                    <span><i class="icon-lab"></i>3 Labs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide skill-slide">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="/icons/Skills.png" alt="Typography">
+                                </div>
+                                <h3>Sales Analytics Interpretation</h3>
+                                <div class="skill-stats">
+                                    <span><i class="icon-challenge"></i>7 Challenges</span>
+                                    <span><i class="icon-lab"></i>3 Labs</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide skill-slide">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="/icons/Skills.png" alt="Project Scope">
+                                </div>
+                                <h3>Project Scope Management</h3>
+                                <div class="skill-stats">
+                                    <span><i class="icon-challenge"></i>1 Challenges</span>
+                                    <span><i class="icon-lab"></i>0 Labs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide skill-slide">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="/icons/Skills.png" alt="Referral">
+                                </div>
+                                <h3>Referral Request Scripting</h3>
+                                <div class="skill-stats">
+                                    <span><i class="icon-challenge"></i>0 Challenges</span>
+                                    <span><i class="icon-lab"></i>1 Labs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide skill-slide">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="/icons/Skills.png" alt="Product Tours">
+                                </div>
+                                <h3>Product Tours</h3>
+                                <div class="skill-stats">
+                                    <span><i class="icon-challenge"></i>0 Challenges</span>
+                                    <span><i class="icon-lab"></i>1 Labs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide skill-slide">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="/icons/Skills.png" alt="Typography">
+                                </div>
+                                <h3>Typography</h3>
+                                <div class="skill-stats">
+                                    <span><i class="icon-challenge"></i>7 Challenges</span>
+                                    <span><i class="icon-lab"></i>3 Labs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide skill-slide">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="/icons/Skills.png" alt="Typography">
+                                </div>
+                                <h3>Writing For The Web</h3>
+                                <div class="skill-stats">
+                                    <span><i class="icon-challenge"></i>7 Challenges</span>
+                                    <span><i class="icon-lab"></i>3 Labs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide skill-slide">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="/icons/Skills.png" alt="Typography">
+                                </div>
+                                <h3>CAPM Exam Preparation</h3>
+                                <div class="skill-stats">
+                                    <span><i class="icon-challenge"></i>7 Challenges</span>
+                                    <span><i class="icon-lab"></i>3 Labs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide skill-slide">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="/icons/Skills.png" alt="Typography">
+                                </div>
+                                <h3>Certification Exam Preparation</h3>
+                                <div class="skill-stats">
+                                    <span><i class="icon-challenge"></i>7 Challenges</span>
+                                    <span><i class="icon-lab"></i>3 Labs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide skill-slide">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="/icons/Skills.png" alt="Typography">
+                                </div>
+                                <h3>Sales Analytics Interpretation</h3>
+                                <div class="skill-stats">
+                                    <span><i class="icon-challenge"></i>7 Challenges</span>
+                                    <span><i class="icon-lab"></i>3 Labs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-pagination"></div>
+                    <div class="skills-prev"></div>
+                    <div class="skills-next"></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-version">
+                    <span class="footer-simple-text">v30.3.1</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy policy</a>
+                    <span class="separator">|</span>
+                    <a href="#">Terms of use</a>
+                    <span class="separator">|</span>
+                    <a href="#">Help Center</a>
+                </div>
+                <div class="footer-powered-by">
+                    <span class="powered-by  footer-simple-text">Powered by <a href="#">LearnLab.ai</a></span>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const featuredSwiper = new Swiper('.featured-swiper', {
+                autoplay: {
+                    delay: 10000,
+                    disableOnInteraction: false,
+                },
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                spaceBetween: 20,
+                loop: true,
+                pagination: {
+                    el: '.featured-pagination',
+                    clickable: true,
+                },
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.featured-next',
+                    prevEl: '.featured-prev',
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2,
+                        spaceBetween: 10
+                    }
+                }
+            });
+            const recommendedSwiper = new Swiper('.recommended-swiper', {
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                spaceBetween: 20,
+                pagination: {
+                    el: '.recommended-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.recommended-next',
+                    prevEl: '.recommended-prev',
+                },
+                breakpoints: {
+                    700: {
+                        slidesPerView: 1,
+                        spaceBetween: 100,
+                    },
+                    770: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2,
+                        spaceBetween: 20,
+                    },
+                    1070: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3,
+                        spaceBetween: 20,
+                    },
+                    1220: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3,
+                        spaceBetween: 20,
+                    },
+                    1365: {
+                        slidesPerView: 4,
+                        slidesPerGroup: 4,
+                        spaceBetween: 20,
+                    },
+                    2250: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5,
+                        spaceBetween: 10,
+                    },
+                    2380: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5,
+                        spaceBetween: 20,
+                    },
+                    2829: {
+                        slidesPerView: 6,
+                        slidesPerGroup: 6,
+                        spaceBetween: 20,
+                    },
+                    3392: {
+                        slidesPerView: 7,
+                        slidesPerGroup: 7,
+                        spaceBetween: 20,
+                    },
+                    3900: {
+                        slidesPerView: 8,
+                        slidesPerGroup: 8,
+                        spaceBetween: 20,
+                    },
+                    4478: {
+                        slidesPerView: 8,
+                        slidesPerGroup: 8,
+                        spaceBetween: 100,
+                    },
+                    4902: {
+                        slidesPerView: 8,
+                        slidesPerGroup: 8,
+                        spaceBetween: 150,
+                    }
+                 }
+             });
+
+            const skillsSwiper = new Swiper('.skills-swiper', {
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                slidesPerView: 1,
+                spaceBetween: 20,
+                slidesPerGroup: 1,
+                loop: true,
+                pagination: {
+                    el: '.skills-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.skills-next',
+                    prevEl: '.skills-prev',
+                },
+                breakpoints: {
+                    768: {
+                        grid: {
+                            rows: 2,
+                            fill: 'row',
+                        },
+                        slidesPerView: 2,
+                        slidesPerGroup: 2,
+                    },
+                    1240: {
+                        grid: {
+                            rows: 2,
+                            fill: 'row',
+                        },
+                        slidesPerView: 4,
+                        slidesPerGroup: 4,
+                    }
+                }
+            });
+
+        </script>
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-bar-menu");
+            
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+            
+            document.querySelectorAll(".nav-bar-menu-link").forEach(link => 
+                link.addEventListener("click", () => {
+                    hamburger.classList.remove("active");
+                    navMenu.classList.remove("active");
+                })
+            );
+        </script>
+<script>
+    const logo = document.querySelector('.nav-logo-wrapper');
+    
+    logo.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+
+    // Check for saved theme on page load
+    if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+</script>
+    </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - PreprLabs</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+    <header id="nav-header" class="nav-bar-wrapper">
+        <nav class="nav-bar">
+            <figure class="nav-logo-wrapper">
+                <a href="/index.html"><img id="nav-logo" alt="preprlabs logo nav-bar" src="images/logoPrepr.png"></a>
+            </figure>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul id="nav-ul" class="nav-bar nav-bar-menu">
+                <span class="menu-options">
+                    <li id="explore" class="nav-bar-menu-link" name="nav-link"><a href="index.html">Explore</a></li>
+                    <li id="dashboard" class="nav-bar-menu-link" name="nav-link"><a>Dashboard</a></li>
+                    <li id="challenges" class="nav-bar-menu-link" name="nav-link"><a href="challenges.html">My Challenges</a></li>
+                    <li id="labs" class="nav-bar-menu-link" name="nav-link"><a href="labs.html">My Labs</a></li>
+                    <li id="projects" class="nav-bar-menu-link" name="nav-link"><a href="projects.html">My Projects</a></li>
+                    <li id="career-explorer" class="nav-bar-menu-link" name="nav-link"><a>Career Explorer</a></li>
+                </span>
+                
+                <div class="blank-div">
+
+                </div>
+
+                <div class="nav-icons">
+                    <span id="bell" class="nav-bar-menu" name="nav-link"><a><i class="icon-bell"></i></a></span>
+                    <span id="chat" class="nav-bar-menu" name="nav-link"><a><i  class="icon-chat"></i></a></span>
+                    <span id="question-mark" class="nav-bar-menu" name="nav-link"><a><i class="icon-question-mark"></i></a></span>
+                </div>
+
+                <div class="nav-search-bar">   
+                    <li id="search-bar" class="nav-bar-menu" name="nav-link"><input type="text" placeholder="Search"/></li>
+                </div>
+
+                <div class="nav-icons big-nav-icons">                        
+                    <span id="profile" class="nav-bar-menu" name="nav-link"><a><i class="icon-profile"></i></a></span>
+                    <span id="app-menu" class="nav-bar-menu" name="nav-link"><a><i class="icon-app-menu"></i></a></span>
+                </div>
+
+            </ul>
+        </nav>
+    </header>
+    <main class="projects-container">
+        <div class="projects-header">
+            <h1>MY PROJECTS</h1>
+            <button class="create-project-btn">+ Create Project</button>
+        </div>
+        
+        <!-- Search Bar -->
+        <div class="search-container">
+            <div class="search-wrapper">
+                <input type="text" placeholder="Search project" class="search-input">
+                <button class="search-btn"><i class="icon-search"></i></button>
+                <button class="filter-btn"><i class="icon-filter"></i></button>
+            </div>
+        </div>
+
+        <!-- Project Navigation -->
+        <div class="project-tabs">
+            <button class="project-tab active">My Projects</button>
+            <button class="project-tab">Invited Projects</button>
+            <button class="project-tab">Favourite projects</button>
+        </div>
+
+        <!-- Project List -->
+        <div class="project-list">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="project-type">Project</div>
+                <div class="project-content">
+                    <h2 class="project-title">Team1 - F.U.N. - Industry Future Challenge to Support Business: November 2024</h2>
+                    <div class="project-details">
+                        <span class="visibility">Public Project</span>
+                        <p class="project-description">Bottom text</p>
+                        <div class="project-status">
+                            <span><i class="icon-ongoing"></i>Ongoing: F.U.N. - Industry Future Challenge to Support Business: November 2024</span>
+                            <span><i class="icon-calendar"></i>Due: Nov 04, 2024</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                        <button class="view-btn">Detailed View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional project cards following the same structure -->
+        </div>
+    </main>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-bar-menu");
+        
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+        
+        document.querySelectorAll(".nav-bar-menu-link").forEach(link => 
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            })
+        );
+    </script>
+</body>
+</html> 
